@@ -1,0 +1,14 @@
+
+/* Custom hover for navbar */
+.custom-nav-link {
+    transition: all 0.3s ease;
+    font-size: 1.1rem; 
+    border-radius: 5px;
+    color: #037889;
+}
+
+.custom-nav-link.btn-outline-info:hover {
+    color: #fff;
+    background-color: #037889; /* Blue background on hover for button */
+    border-color: #037889;
+}

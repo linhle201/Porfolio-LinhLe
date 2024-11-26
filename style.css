@@ -4,11 +4,13 @@
     transition: all 0.3s ease;
     font-size: 1.1rem; 
     border-radius: 5px;
-    color: #037889;
+    color: white;
+    background-color:#037889 ;
 }
 
 .custom-nav-link.btn-outline-info:hover {
-    color: #fff;
-    background-color: #037889; /* Blue background on hover for button */
+    color: #037889;
+    background-color: white; /* Blue background on hover for button */
     border-color: #037889;
 }
+

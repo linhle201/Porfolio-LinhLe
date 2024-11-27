@@ -14,3 +14,41 @@
     border-color: #037889;
 }
 
+@keyframes fadeInSection {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Start from slightly below */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End at normal position */
+    }
+}
+
+.animate__animated {
+    animation-name: fadeInSection;
+    animation-duration: 1s;
+    animation-fill-mode: both; 
+}
+
+
+.animate__animated:nth-child(1) {
+    animation-delay: 0.3s; 
+}
+
+.animate__animated:nth-child(2) {
+    animation-delay: 0.6s; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

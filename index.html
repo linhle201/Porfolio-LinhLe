@@ -11,21 +11,24 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
    
+    <!-- Bootstrap Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    
     <!--Custom Css-->
     <link href="style.css" rel="stylesheet">
 </head>
 
-<body class="bg-light" style="margin: 2rem 10%;">
+<body class="bg-light" style="margin: 2rem 10%; font-family:Georgia, 'Times New Roman', Times, serif; ">
 
     <header>
         <!-- Logo Section (Your Name) -->
-        <section class="bg-white text-center py-4 pt-6"> 
-            <h1 class="display-1  m-0" style="font-family: 'Dancing Script', sans-serif; color: rgb(22, 128, 128);">Linh Le</h1> 
+        <section class="bg-white text-center py-4 pt-6 m-4 " style="box-shadow: 0 3px 10px rgba(0, 98, 109, 0.5); text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);"> 
+            <h1 class="display-1  m-0" style="font-family: 'Dancing Script', sans-serif; color: rgb(22, 128, 128); font-size: 7rem">Linh Le</h1> 
             <p>Web developer - UI/UX Designer</p>
         </section>
     
         <!-- Navbar Section -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white text-black mt-1">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white text-black mt-1 ">
             <div class="container">
                 <!-- Navbar Toggler (Hamburger icon on the right) -->
                 <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style=" order: -1;">
@@ -34,7 +37,7 @@
                 
                 <!-- Navbar Links -->
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto"style="justify-content: center; width: 100%;">
+                    <ul class="navbar-nav ms-auto"style="justify-content: center; width: 100%; font-family:Georgia, 'Times New Roman', Times, serif;">
                         <!-- Home Link -->
                         <li class="nav-item mx-4">
                             <a class="nav-link btn btn-outline-info py-1 px-5 fs-6 custom-nav-link" href="#home">Home</a>
@@ -57,20 +60,55 @@
         </nav>
     </header>
 
-    <section id="self-photo" class="py-5 mt-5">
+    <section id="self-photo" class="py-10" style="margin-top: 50px; background-color: rgb(109, 153, 168); padding: 50px; border-radius: 20px;">
         <div class="container text-center">
-           
             <div class="row">
                 <!-- Left Column for the Image -->
-                <div class="col-md-5">
+                <div class="col-md-5 animate__animated">
                     <!-- Add a fixed width and height to make it square -->
-                    <img src="mee.png" alt="Your Photo" class="img-fluid rounded-circle" style="width:500px; height: 500px; object-fit:contain; background-color: rgb(236, 242, 245); box-shadow: 0 4px 15px rgba(0, 98, 109, 0.5);">
+                    <img src="mee.png" alt="My Photo" class="img-fluid" style="object-fit:contain; height: 470px;width: 100%; box-shadow: 4px 4px 10px rgb(184, 238, 236, 4); background-image: url(https://images.unsplash.com/photo-1521133573892-e44906baee46?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODZ8fGdyYXBoaWMlMjBiYWNrZ3JvdW5kJTIwZnJlZXxlbnwwfHwwfHx8MA%3D%3D);">
                 </div>
                 <!-- Right Column for the Text -->
-                <div class="col-md-7">
-                    <h2 class="display-4 mb-4">About Me</h2>
-                    <p class="lead text-muted mb-4">I am a passionate web developer with a focus on creating beautiful, fast, and user-friendly websites.</p>
-                    <p class="lead text-muted">Here you can add a little more about yourself, your skills, or your goals as a web developer.</p>
+                <div class="col-md-7 d-flex justify-content-center align-items-center">
+                    <!-- Use flexbox utilities to center the text -->
+                    <div class="text-center">
+                        <h2 class="display-1 mb-4" style="font-family: 'Dancing Script'; color: rgb(251, 251, 251);text-shadow: 8px 10px 8px rgb(1, 67, 64); letter-spacing: 3px;">
+                            Welcome Friend
+                        </h2>
+                        <p class="lead mb-3 fw-bold" style="color: rgb(22, 59, 62); font-family:Georgia, 'Times New Roman', Times, serif;">
+                         Need a Web developer, Designer, UI/UX experienced person?
+                        </p>
+                        <p class="lead mb-5 fst-italic" style="color: rgb(216, 244, 246); font-family:Georgia, 'Times New Roman', Times, serif;">
+                            "I specialize in creating intuitive and visually appealing web experiences that engage users and drive results."
+                        </p>
+
+                        <!-- Button Section  -->
+                        <div class="d-flex justify-content-center mb-3">
+                            <button type="button" class="btn btn-info mx-2" style=" font-family:Georgia, 'Times New Roman', Times, serif;">See My Works</button>
+                            <button type="button" class="btn btn-info mx-2" style=" font-family:Georgia, 'Times New Roman', Times, serif;">Resume</button>
+                            <button type="button" class="btn btn-info mx-2" style=" font-family:Georgia, 'Times New Roman', Times, serif;">Work With Me</button>
+                          
+                        </div>
+                        
+                        <!-- Social Media Icons -->
+                        <div class="d-flex justify-content-center">
+                            <!-- Facebook Icon -->
+                            <a href="#" style="font-size: 30px; color: #0940b5;" class="mx-2">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            
+                            <!-- Instagram Icon -->
+                            <a href="#" style="font-size: 30px; color: #5f0e1d;" class="mx-2">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            
+                            
+                            <!-- GitHub Icon -->
+                            <a href="#" style="font-size: 30px; color: #333;" class="mx-2">
+                                <i class="bi bi-github"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -78,10 +116,117 @@
 
 
 <!-- About Section -->
-<section id="about" class="py-5">
+<section id="about" class="py-5 bg-light">
     <div class="container text-center">
-        <h2 class="display-4 mb-4">About Me</h2>
-        <p class="lead text-muted mb-4">I am a passionate web developer with a focus on creating beautiful, fast, and user-friendly websites.</p>
+        <h2 class="display-1 mb-4" style="font-family: 'Dancing Script'; color: rgb(2, 91, 87);text-shadow: 1px 3px 1px rgb(16, 86, 91); letter-spacing: 3px;">
+            About Me
+        </h2>
+        <div id="hero-text">
+            <p class="lead " style="font-size: 18px">
+                <span class="text-nowrap bg-body-secondary border" style="width: 9rem; color: rgb(2, 119, 119);">
+                   "--<strong> A thousand raindrops fall </strong>
+                 </span>
+                 , and 
+                <span class="fw-bold" style=" text-shadow: 1.5px 2px 2px ; color: rgb(2, 119, 119); font-size: 27px">not a single one</span> falls in
+                <span class="text-nowrap bg-body-secondary border" style="width: 8rem; color: rgb(2, 119, 119);">
+                   <strong> the wrong place.</strong></span> The people we meet,
+                <span class="fw-bold" style=" text-shadow: 1.5px 2px 2px; color: rgb(2, 119, 119); font-size: 27px">none of them</span> are a coincidence.--"
+            </p>
+        </div>
+
+    <!-- About Me Paragraph Section -->
+    
+    <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-10">
+            <p class="lead mb-4" style="font-size: 18px; color: #444; text-align: justify;">
+                Hello! I'm <strong>Linh Le</strong>, a passionate web developer and designer committed to bringing ideas to life through intuitive and user-friendly web experiences. I am currently a second-year student at <strong>Nova Scotia Community College</strong>, where I’ve gained hands-on experience in both front-end and back-end development through various projects. I specialize in modern web technologies like <strong>HTML, CSS, JavaScript, React</strong>, and use design tools such as <strong>Figma, Bootstrap, and Tailwind</strong>.
+            </p>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-10">
+            <p class="lead mb-4" style="font-size: 18px; color: #444; text-align: justify;">
+                My mission is to create responsive, visually stunning websites and applications that help users achieve their goals by offering both functionality and seamless design. I am constantly exploring new technologies and am eager to collaborate on projects that push the boundaries of creativity and innovation. 
+            </p>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-10">
+            <p class="lead" style="font-size: 18px; color: #444; text-align: justify;">
+                Additionally, I have knowledge of <strong>JavaScript, Java</strong>, and app development frameworks like <strong>Laravel</strong>. I pride myself on being a hard worker, and I am excited to contribute to creative environments that foster collaboration and continuous learning.
+            </p>
+        </div>
+    </div>
+
+        <h3 class="mt-5 display-6 mb-4 " style="font-family: 'Dancing Script'; color: rgb(2, 91, 87); letter-spacing: 3px;">My Skills and Experiences</h3>
+        
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Skill 1 -->
+            <div class="col">
+                <div class="card h-100 shadow-lg border-info">
+                    <div class="card-body text-center">
+                        <i class="bi bi-code-slash display-4 mb-3 text-primary"></i>
+                        <h5 class="card-title text-dark">Web Development</h5>
+                        <p class="card-text" style="color: #555;">I build dynamic websites with modern technologies like HTML, CSS, JavaScript, and React, ensuring optimal functionality and user experience.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Skill 2 -->
+            <div class="col">
+                <div class="card h-100 shadow-lg border-danger">
+                    <div class="card-body text-center">
+                        <i class="bi bi-palette display-4 mb-3 text-danger"></i>
+                        <h5 class="card-title text-dark">UI/UX Design</h5>
+                        <p class="card-text" style="color: #555;">Crafting user-friendly interfaces and delivering seamless experiences using design tools such as Figma, creating intuitive layouts and interactive designs.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Skill 3 -->
+            <div class="col">
+                <div class="card h-100 shadow-lg border-success">
+                    <div class="card-body text-center">
+                        <i class="bi bi-tools display-4 mb-3 text-success"></i>
+                        <h5 class="card-title text-dark">Web Design</h5>
+                        <p class="card-text" style="color: #555;">Designing responsive, visually engaging websites using HTML, CSS, Bootstrap, and Tailwind to create accessible and aesthetically pleasing web pages.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Row of Skills -->
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+            <!-- Skill 4 -->
+            <div class="col">
+                <div class="card h-100 shadow-lg border-warning">
+                    <div class="card-body text-center">
+                        <i class="bi bi-server display-4 mb-3 text-warning"></i>
+                        <h5 class="card-title text-dark">Database Management</h5>
+                        <p class="card-text" style="color: #555;">Proficient in managing and optimizing databases using SQL, MongoDB, and PhpMyAdmin to ensure data integrity and seamless storage solutions.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Skill 5 -->
+            <div class="col">
+                <div class="card h-100 shadow-lg border-info">
+                    <div class="card-body text-center">
+                        <i class="bi bi-cloud display-4 mb-3 text-info"></i>
+                        <h5 class="card-title text-dark">Cloud Computing</h5>
+                        <p class="card-text" style="color: #555;">Experience deploying, managing, and scaling web applications on cloud platforms like AWS, Google Cloud, and Azure, ensuring reliability and scalability.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Skill 6 -->
+            <div class="col">
+                <div class="card h-100 shadow-lg border-secondary">
+                    <div class="card-body text-center">
+                        <i class="bi bi-laptop display-4 mb-3 text-secondary"></i>
+                        <h5 class="card-title text-dark">App Development</h5>
+                        <p class="card-text" style="color: #555;">Building cross-platform mobile applications using frameworks like React Native and Laravel to deliver functional and performance-driven apps.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 

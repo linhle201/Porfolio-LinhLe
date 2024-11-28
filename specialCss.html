@@ -1,0 +1,200 @@
+<!--Exercise 8: 
+
+I will use these CSS animations in my portfolio to make it more interesting and interactive. 
+The hover effects on the icons will make the design feel more dynamic and engaging for visitors. 
+These animations, like color changes, shadow effects, and icon movements, will help make my portfolio look modern and professional.
+Using these animations shows that I have skills in front-end design and CSS, which are important for web development. 
+These effects will also make it easier for visitors to notice important parts of my portfolio,
+like social media links or project sections, encouraging them to explore more.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 8</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+       body {
+        background: #2d2c3e;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        overflow: hidden;
+        z-index: -1;
+        }   
+
+.container {
+  display: table;
+  height: 95vh;
+  width: 90%;
+  padding-bottom: 5vh;
+  margin: auto auto;
+  background: #2d2c3e;
+  z-index: -1;
+}
+
+.content {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  color: #FFFFFF;
+}
+
+/* Icon Container */
+.icon-container {
+  margin-top: 30px;
+  width: 100%;
+  height: 60px; /* $icon-size */
+}
+
+.icon {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  width: 60px; /* $icon-size */
+  height: 60px; /* $icon-size */
+  margin-left: 12px; /* $icon-size / 5 */
+  margin-right: 12px; /* $icon-size / 5 */
+  border-radius: 30px; /* $icon-size * $border-radius */
+  overflow: hidden;
+}
+
+.icon::before, .icon::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: all 0.25s ease;
+  border-radius: 30px; /* $icon-size * $border-radius */
+}
+
+.icon i {
+  position: relative;
+  color: #FFFFFF;
+  font-size: 30px; /* $icon-size / 2 */
+  margin-top: 15px; /* $icon-size / 4 */
+  transition: all 0.25s ease;
+}
+
+/* Icon Fill Effect */
+.icon-fill::before {
+  transition-duration: 0.5s;
+  box-shadow: inset 0 0 0 1px #16A085; /* $green */
+}
+
+.icon-fill:hover::before {
+  box-shadow: inset 0 0 0 60px #16A085; /* $icon-size * $green */
+}
+
+/* Icon Enter Effect */
+.icon-enter::after {
+  box-shadow: inset 0 0 0 1px #EB9532; /* $orange */
+}
+
+.icon-enter::before {
+  border-radius: 0;
+  margin-left: -100%;
+  box-shadow: inset 0 0 0 60px #EB9532; /* $icon-size * $orange */
+}
+
+.icon-enter:hover::before {
+  margin-left: 0;
+}
+
+/* Icon Expand Effect */
+.icon-expand::after {
+  box-shadow: inset 0 0 0 1px #C82647; /* $red */
+}
+
+.icon-expand::before {
+  background: #C82647; /* $red */
+  box-shadow: inset 0 0 0 60px #2d2c3e; /* $icon-size * $background */
+}
+
+.icon-expand:hover::before {
+  box-shadow: inset 0 0 0 1px #2d2c3e; /* $background */
+}
+
+/* Icon Collapse Effect */
+.icon-collapse::before {
+  border-radius: 0;
+}
+
+.icon-collapse:hover::before {
+  box-shadow:
+    inset 0 30px 0 0 #8CC63F,  /* $green-l */
+    inset 0 -30px 0 0 #8CC63F; /* $green-l */
+}
+
+.icon-collapse::after {
+  box-shadow: inset 0 0 0 1px #8CC63F; /* $green-l */
+}
+
+/* Icon Rotate Effect */
+.icon-rotate {
+  box-shadow: inset 0 0 0 1px #7E3661; /* $purple */
+}
+
+.icon-rotate::after, .icon-rotate::before {
+  border: 0px solid transparent;
+}
+
+.icon-rotate:hover::before {
+  transition: border-top-width 0.3s ease, border-top-color 0.3s ease;
+  border-width: 60px; /* $icon-size */
+  border-top-color: #7E3661; /* $purple */
+}
+
+.icon-rotate:hover::after {
+  transition: border-left-width 0.3s ease, border-left-color 0.3s ease;
+  border-width: 60px; /* $icon-size */
+  border-left-color: #7E3661; /* $purple */
+}
+
+.icon-rotate:hover {
+  transition: 0.001s ease 0.3s;
+  background: #7E3661; /* $purple */
+}
+
+.icon-rotate i {
+  z-index: 1;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>My Portfolio</h1>
+
+            <div class="icon-container">
+                
+                <div class="icon icon-fill">
+                    <i class="fab fa-github"></i>
+                </div>
+                <div class="icon icon-enter">
+                    <i class="fab fa-linkedin"></i>
+                </div>
+                <div class="icon icon-expand">
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <div class="icon icon-collapse">
+                    <i class="fab fa-facebook"></i>
+                </div>
+                <div class="icon icon-rotate">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+
+        
+        </div>
+    </div>
+</body>
+</html>
